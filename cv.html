@@ -29,12 +29,10 @@
         }
 
         header {
-            position: relative;
             display: grid;
             justify-items: center;
-            padding-right: 14rem;
-            padding-left: 4rem;
-            margin-left: 4rem;
+            row-gap: 1.75rem;
+            margin-bottom: 2.5rem;
         }
 
         h1 {
@@ -42,7 +40,6 @@
             font-size: clamp(2.6rem, 5vw, 3.8rem);
             margin: 0;
             text-align: center;
-            margin-right: -2.5rem;
         }
 
         h2 {
@@ -81,15 +78,11 @@
         }
 
         .contact {
-            position: absolute;
-            right: -5rem;
-            top: 50%;
-            transform: translateY(-50%);
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
             font-size: 1rem;
-            text-align: left;
+            text-align: center;
         }
 
         .contact-item {
@@ -135,17 +128,7 @@
 
         @media (max-width: 640px) {
             header {
-                padding-right: 0;
-                padding-left: 0;
-                margin-left: 0;
-            }
-
-            .contact {
-                position: static;
-                transform: none;
-                text-align: center;
-                align-items: center;
-                margin-top: 1.25rem;
+                row-gap: 1.5rem;
             }
         }
     </style>
