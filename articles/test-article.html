@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Test — Nisrine Aflak</title>
+    <link rel="stylesheet" href="../styles/article.css">
+    <script type="text/javascript">
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <p class="meta">Publié le <time datetime="2025-02-01">1er février 2025</time></p>
+            <h1>Article Test</h1>
+        </header>
+        <article>
+            <p>Petit article de démonstration pour vérifier la mise en page, les formules, les listes et les images.</p>
+
+            <section>
+                <h2>Introduction</h2>
+                <p>Voici du texte courant afin de tester la typographie. Nous pouvons inclure une équation inline comme $e^{i\pi} + 1 = 0$ pour vérifier le rendu MathJax.</p>
+            </section>
+
+            <section>
+                <h2>Formule en bloc</h2>
+                <p>Les équations en affichage bloc doivent s’aligner proprement&nbsp;:</p>
+                <p>$$
+                \int_{-\infty}^{+\infty} e^{-x^2} \mathrm{d}x = \sqrt{\pi}
+                $$</p>
+            </section>
+
+            <section>
+                <h2>Liste numérotée</h2>
+                <p>Test d’une liste ordonnée pour garder la cohérence visuelle :</p>
+                <ol>
+                    <li>Premier point</li>
+                    <li>Deuxième point</li>
+                    <li>Troisième point</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Illustration</h2>
+                <figure>
+                    <img src="../assets/images/example.png" alt="Illustration de test">
+                    <figcaption>Figure 1&nbsp;: légende de test. Remplacer par votre image.</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>Tout semble fonctionner correctement. Il suffit maintenant de remplacer ce contenu par un vrai article.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

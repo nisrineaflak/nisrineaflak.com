@@ -21,26 +21,60 @@
         }
 
         main {
-            text-align: center;
-            padding: 2rem;
+            width: min(720px, 100%);
+            padding: 2.5rem 1.5rem 4rem;
+            display: grid;
+            gap: 2rem;
         }
 
         h1 {
             font-weight: 400;
             font-size: clamp(2rem, 4vw, 3rem);
-            margin-bottom: 1.5rem;
+            margin: 0;
+            text-align: center;
         }
 
         p {
             margin: 0;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+            max-width: 360px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            display: block;
+            transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        a:hover,
+        a:focus {
+            border-color: #9ecbff;
+            color: #9ecbff;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Articles</h1>
-        <p>À venir.</p>
+        <ul>
+            <li>
+                <a href="articles/test-article.html">Article Test</a>
+            </li>
+        </ul>
     </main>
 </body>
 </html>
