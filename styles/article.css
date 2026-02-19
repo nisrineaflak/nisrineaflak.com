@@ -59,6 +59,11 @@ p {
     margin: 0;
 }
 
+article p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 ul,
 ol {
     margin: 0;
@@ -84,6 +89,31 @@ figure img {
     height: auto;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 12px;
+}
+
+.koch-diagram {
+    width: min(320px, 100%);
+    height: auto;
+    display: block;
+    color: #9ecbff;
+}
+
+.koch-iteration-gallery {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.koch-iteration-gallery figure {
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.koch-iteration-gallery .koch-diagram {
+    width: min(200px, 100%);
 }
 
 figcaption {

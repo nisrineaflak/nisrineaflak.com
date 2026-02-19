@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre de l’article — Nisrine Aflak</title>
+    <link rel="icon" type="image/png" href="../images/toad.png">
+    <link rel="stylesheet" href="../styles/article.css">
+    <script type="text/javascript">
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <p class="meta">Pubished on <time datetime="2025-11-13">November 13th, 2025</time></p>
+            <h1>Finite Inside, Infinite Outside</h1>
+        </header>
+        <article>
+            <p> 
+            There are shapes with a finite area but an infinite perimeter, and others with a finite volume but an infinite surface area.
+            This isn’t a paradox. It just comes from the way these shapes are built: they keep adding detail, but the added pieces get small fast enough for some quantities to stay finite.
+            I will show two examples that are pretty useful because the calculations are simple, and they show immediately how a shape can behave normally in one aspect and completely diverge in another!
+            </p>
+
+            <section>
+                <h2>The Koch Snowflake</h2>
+                <p>The Koch snowflake comes from a very basic construction.</p>
+                <p>Step 1 — Start with a straight segment.</p>
+                <figure>
+                    <svg class="koch-diagram" viewBox="0 0 140 60" role="img" aria-labelledby="koch-step-1">
+                        <line x1="10" y1="30" x2="130" y2="30" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                    </svg>
+                </figure>
+                <p>Step 2 — Divide it into three equal parts.</p>
+                <figure>
+                    <svg class="koch-diagram" viewBox="0 0 140 60" role="img" aria-labelledby="koch-step-2">
+                        <line x1="10" y1="30" x2="130" y2="30" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                        <line x1="50" y1="25" x2="50" y2="35" stroke="currentColor" stroke-width="0.5" />
+                        <line x1="90" y1="25" x2="90" y2="35" stroke="currentColor" stroke-width="0.5" />
+                    </svg>
+                </figure>
+                <p>Step 3 — Replace the middle part with an equilateral bump, so we have four pieces of length $\frac13$. </p>
+                <figure>
+                    <svg class="koch-diagram" viewBox="0 0 140 80" role="img" aria-labelledby="koch-step-3" preserveAspectRatio="xMidYMid meet">
+                        <line x1="10" y1="60" x2="50" y2="60" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                        <polyline points="50,60 70,25.36 90,60" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+                        <line x1="90" y1="60" x2="130" y2="60" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                    </svg>
+                </figure>
+                <p>This is the first iteration of the Koch Snowflake! Now, we repeat the same rule on the four new segments. This gives us the second iteration :</p>
+                <figure>
+                    <svg class="koch-diagram" viewBox="0 0 140 80" role="img" aria-labelledby="koch-step-4" preserveAspectRatio="xMidYMid meet">
+                        <title id="koch-step-4">Second iteration of the Koch snowflake</title>
+                        <polyline 
+                            points="10,60 23.33,60 30,48.45 36.67,60 50,60 56.67,48.45 50,36.91 63.33,36.91 70,25.36 76.67,36.91 90,36.91 83.33,48.45 90,60 103.33,60 110,48.45 116.67,60 130,60" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="1" 
+                            stroke-linejoin="round" 
+                            stroke-linecap="round" />
+                    </svg>
+                </figure>
+                <p>It's starting to look like an actual snowflake! Here is the third iteration before continuing :</p>
+
+            </section>
+
+            <!-- Exemple de section -->
+            <!--
+            <section>
+                <h2>Nom section</h2>
+                <p></p>
+            </section>
+            -->
+
+            <!-- Exemple d’équation -->
+            <!--
+            <p>$$
+            E = mc^2
+            $$</p>
+            -->
+
+            <!-- Exemple d’image -->
+            <!--
+            <figure>
+                <img src="../assets/images/nom-de-l-image.png" alt="Description">
+                <figcaption>Légende.</figcaption>
+            </figure>
+            -->
+        </article>
+    </main>
+</body>
+</html>
